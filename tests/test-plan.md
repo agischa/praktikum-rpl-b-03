@@ -9,7 +9,7 @@ Tujuannya adalah memastikan alur pencatatan pengeluaran dan pemisahan dana (bran
     - Kategorisasi: Menguji apakah sistem benar dalam mengelompokkan pengeluaran (misal: Makan, Transport) ke dalam diagram persentase.
     - Akurasi Data: Memastikan total persentase pengeluaran selalu berjumlah 100%.
 
-    Fitur Brankas Tabungan (Inspo: Kantong Jago)
+    Fitur Brankas Tabungan
     - Alokasi Dana: Menguji proses pemindahan saldo dari "Saldo Utama" ke "Brankas Khusus" (Nikah, Umroh, dll).
     - Isolasi Saldo: Memastikan saldo yang sudah masuk ke Brankas tidak ikut terpotong saat melakukan transaksi di fitur E-Wallet utama.
     - Target Tabungan: Memastikan ada indikator progres (misal: sudah terkumpul 50%) saat saldo brankas bertambah.
