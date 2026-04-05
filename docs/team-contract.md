@@ -41,11 +41,11 @@ Tim ini dibentuk untuk menyelesaikan tugas Praktikum Rekayasa Perangkat Lunak se
 - PR harus direview sebelum di-merge
 
 ## 7. Jadwal Kerja
-- Diskusi awal tim: [isi tanggal]
-- Setup repository: [isi tanggal]
-- Kontribusi anggota: [isi tanggal]
-- Review dan merge PR: [isi tanggal]
-- Submission tugas: [isi tanggal]
+- Diskusi awal tim: 29 Maret 2026
+- Setup repository: 4 April 2026
+- Review dan merge PR: 5 April 2026
+- Submission tugas: Rutin sesuai dengan tenggat waktu yang diberikan pada setiap tugas
+- Diskusi dan Pengerjaan Tugas: Rutin sehari setelah diberikannya tugas dan pada hari sabtu sebelum submisi tugas
 
 ## 8. Komitmen Tim
 Seluruh anggota tim berkomitmen untuk berkontribusi secara aktif, menjaga komunikasi, dan menyelesaikan tugas sesuai alur kerja yang telah disepakati.
