@@ -71,6 +71,6 @@ Then: System creates the new account and makes it available as a source/destinat
 US-11
 As a User, I want to transfer balance between accounts, so that I can manage money distribution without affecting expense stats.
 Acceptance Criteria:
-Given: User opens the transfer menu.
+Given: User opens the transfer menu
 When: User inputs nominal, source account, destination account, and saves.
 Then: System deducts from the source, adds to the destination, and records it specifically as a Transfer (not an expense).
