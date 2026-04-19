@@ -1,6 +1,31 @@
 # Software Requirements Specification (SRS
 
 ## 1. Pendahuluan
+
+### 1.1 Tujuan Dokumen
+Dokumen *Software Requirements Specification (SRS)* ini disusun untuk mendeskripsikan kebutuhan sistem dari aplikasi **Pocket-Mon**, yaitu sebuah aplikasi *financial tracker* yang membantu pengguna dalam mengelola keuangan pribadi. Dokumen ini menjadi acuan bagi tim pengembang dalam proses perancangan, pengembangan, dan pengujian sistem agar sesuai dengan kebutuhan pengguna.
+
+### 1.2 Ruang Lingkup Sistem
+**Pocket-Mon** merupakan aplikasi manajemen keuangan yang memungkinkan pengguna untuk:
+- Mencatat pemasukan dan pengeluaran
+- Mengelola saldo dari berbagai akun
+- Melakukan transfer antar akun
+- Mengalokasikan dana ke dalam fitur *brankas* (tujuan keuangan)
+- Melihat ringkasan kondisi keuangan
+
+Aplikasi ini dirancang untuk membantu pengguna dalam mengontrol arus kas secara terstruktur, memantau perkembangan keuangan, serta mencapai tujuan finansial dengan lebih efektif.
+
+### 1.3 Definisi, Akronim, dan Istilah
+Berikut beberapa istilah yang digunakan dalam dokumen ini:
+
+- **User Story (US)**: Deskripsi kebutuhan sistem dari sudut pandang pengguna  
+- **FR (Functional Requirement)**: Kebutuhan fungsional sistem yang harus dipenuhi  
+- **NFR (Non-Functional Requirement)**: Kebutuhan non-fungsional seperti performa, keamanan, dan kegunaan  
+- **Account**: Sumber penyimpanan uang (misalnya rekening bank atau e-wallet)  
+- **Transaction**: Aktivitas pemasukan atau pengeluaran uang  
+- **Brankas**: Fitur untuk mengalokasikan dana ke dalam tujuan tertentu (misalnya tabungan atau target)  
+- **Balance**: Jumlah saldo yang dimiliki pengguna pada suatu akun  
+- **Transfer**: Pemindahan saldo dari satu akun ke akun lainnya  ## 1. Pendahuluan
 ### 1.1 Tujuan Dokumen
 Dokumen Software Requirements Specification (SRS) ini disusun untuk mendeskripsikan kebutuhan sistem dari aplikasi Pocket-Mon, yaitu sebuah aplikasi financial tracker yang membantu pengguna dalam mengelola keuangan pribadi. Dokumen ini menjadi acuan utama bagi tim pengembang dalam merancang, membangun, dan menguji sistem agar sesuai dengan kebutuhan pengguna.
 ### 1.2 Ruang Lingkup Sistem
@@ -9,12 +34,18 @@ Pocket-Mon merupakan aplikasi manajemen keuangan yang memungkinkan pengguna untu
 Berikut beberapa istilah yang digunakan dalam dokumen ini:
 
 User Story (US): Deskripsi kebutuhan sistem dari sudut pandang pengguna
+
 FR (Functional Requirement): Kebutuhan fungsional sistem yang harus dipenuhi
 NFR (Non-Functional Requirement): Kebutuhan non-fungsional seperti performa, keamanan, dll
+
 Account: Sumber penyimpanan uang (misalnya rekening bank atau e-wallet)
+
 Transaction: Aktivitas pemasukan atau pengeluaran uang
+
 Brankas: Fitur untuk mengalokasikan dana ke dalam tujuan tertentu (misalnya tabungan atau target)
+
 Balance: Jumlah saldo yang dimiliki pengguna pada suatu akun
+
 Transfer: Pemindahan saldo dari satu akun ke akun lainnya.
 
 
@@ -41,8 +72,14 @@ Sistem harus menampilkan seluruh daftar rekening beserta rincian saldo masing-ma
 ### FR5 (Lora)
 Sistem harus mampu melakukan mutasi saldo antar rekening secara otomatis tanpa merusak statistik pengeluaran.
 
-### FR6 (Giska)
-Sistem harus menyediakan fitur utama yang memungkinkan pengguna untuk menggunakan layanan inti dari aplikasi sesuai tujuan sistem.
+### FR6 
+Sistem harus dapat menyediakan fitur brankas (goal-based saving) yang memungkinkan pengguna untuk membuat target tabungan, mengalokasikan dana dari rekening ke brankas, serta menampilkan progres pencapaian target.
+
+### FR7
+Sistem harus dapat memungkinkan pengguna untuk membuat dan mengelola kategori pengeluaran agar transaksi dapat dikelompokkan dengan jelas.
+
+### FR8
+Sistem harus dapat menampilkan visualisasi data pengeluaran dalam bentuk grafik berdasarkan kategori, sehingga pengguna dapat memahami pola pengeluaran.
 
 
 ## 4. Non-Functional Requirements
