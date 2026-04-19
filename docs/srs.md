@@ -9,12 +9,18 @@ Pocket-Mon merupakan aplikasi manajemen keuangan yang memungkinkan pengguna untu
 Berikut beberapa istilah yang digunakan dalam dokumen ini:
 
 User Story (US): Deskripsi kebutuhan sistem dari sudut pandang pengguna
+
 FR (Functional Requirement): Kebutuhan fungsional sistem yang harus dipenuhi
 NFR (Non-Functional Requirement): Kebutuhan non-fungsional seperti performa, keamanan, dll
+
 Account: Sumber penyimpanan uang (misalnya rekening bank atau e-wallet)
+
 Transaction: Aktivitas pemasukan atau pengeluaran uang
+
 Brankas: Fitur untuk mengalokasikan dana ke dalam tujuan tertentu (misalnya tabungan atau target)
+
 Balance: Jumlah saldo yang dimiliki pengguna pada suatu akun
+
 Transfer: Pemindahan saldo dari satu akun ke akun lainnya.
 
 
