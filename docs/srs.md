@@ -11,18 +11,22 @@ Dokumen ini akan menjadi acuan utama dalam proses pengembangan sistem.
 
 
 ## 2. Deskripsi Umum
-(Penanggung jawab: Wawa)
+(Wawa)
+Sistem yang akan dikembangkan merupakan aplikasi manajemen keuangan pribadi berbasis mobile yang memungkinkan pengguna untuk mencatat pemasukan dan pengeluaran secara manual. Sistem ini tidak terhubung langsung dengan layanan perbankan, sehingga seluruh data keuangan diinput secara mandiri oleh pengguna.
 
-[SILAKAN DIISI]
+Aplikasi ini mendukung pengelolaan keuangan melalui beberapa fitur utama, yaitu manajemen multi rekening (seperti uang tunai dan rekening bank), pencatatan transaksi pemasukan dan pengeluaran, serta fitur transfer antar rekening untuk mengatur distribusi saldo.
 
+Selain itu, sistem menyediakan fitur "Brankas" sebagai media tabungan berbasis tujuan (goal-based saving), yang memungkinkan pengguna untuk mengalokasikan dana dari rekening ke target tertentu seperti tabungan umroh, liburan, atau kebutuhan lainnya.
+
+Sistem juga menyediakan visualisasi data dalam bentuk grafik untuk membantu pengguna memahami pola pengeluaran dan pemasukan, sehingga dapat meningkatkan kesadaran serta kontrol terhadap kondisi keuangan pribadi.
 
 ## 3. Functional Requirements
 
 ### FR1 (Wawa)
-[SILAKAN DIISI]
+Sistem harus dapat mencatat pengeluaran dari rekening yang dipilih oleh pengguna, dimana pengguna dapat memasukkan nominal, kategori pengeluaran, serta tanggal transaksi, dan sistem akan secara otomatis mengurangi saldo pada rekening tersebut.
 
 ### FR2 (Wawa)
-[SILAKAN DIISI]
+Sistem harus dapat mencatat pemasukan ke rekening yang dipilih oleh pengguna, dimana pengguna dapat memasukkan nominal dan sumber pemasukan, dan sistem akan secara otomatis menambahkan saldo pada rekening tersebut.
 
 ### FR3 (Noya)
 [SILAKAN DIISI]
@@ -48,8 +52,11 @@ Sistem harus memiliki tingkat ketersediaan (uptime) minimal 99.5% setiap bulan, 
 ### NFR3 (Lora)
 Sistem harus menjamin tingkat akurasi perhitungan saldo sebesar 100% (zero error) untuk setiap transaksi pemasukan, pengeluaran, maupun transfer antar rekening.
 
-### NFR4 (Giska)
+### NFR4 (Wawa)
 Sistem harus memiliki waktu respon maksimal 3 detik untuk setiap permintaan pengguna dalam kondisi normal.
+
+## NFR5 (Wawa)
+Sistem harus memastikan data pengguna hanya dapat diakses oleh pengguna yang bersangkutan melalui mekanisme autentikasi (login) yang aman.
 
 
 ## 5. Catatan
