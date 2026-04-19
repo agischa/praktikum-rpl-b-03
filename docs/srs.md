@@ -31,7 +31,7 @@ Dokumen ini akan menjadi acuan utama dalam proses pengembangan sistem.
 [SILAKAN DIISI]
 
 ### FR5 (Lora)
-[SILAKAN DIISI]
+Sistem harus mampu melakukan mutasi saldo antar rekening secara otomatis tanpa merusak statistik pengeluaran.
 
 ### FR6 (Giska)
 Sistem harus menyediakan fitur utama yang memungkinkan pengguna untuk menggunakan layanan inti dari aplikasi sesuai tujuan sistem.
@@ -43,10 +43,10 @@ Sistem harus menyediakan fitur utama yang memungkinkan pengguna untuk menggunaka
 [SILAKAN DIISI]
 
 ### NFR2 (Lora)
-[SILAKAN DIISI]
+Sistem harus memiliki tingkat ketersediaan (uptime) minimal 99.5% setiap bulan, sehingga pengguna dapat mengakses catatan keuangan kapan saja tanpa kendala server down.
 
 ### NFR3 (Lora)
-[SILAKAN DIISI]
+Sistem harus menjamin tingkat akurasi perhitungan saldo sebesar 100% (zero error) untuk setiap transaksi pemasukan, pengeluaran, maupun transfer antar rekening.
 
 ### NFR4 (Giska)
 Sistem harus memiliki waktu respon maksimal 3 detik untuk setiap permintaan pengguna dalam kondisi normal.
