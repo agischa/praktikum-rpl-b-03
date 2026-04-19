@@ -25,8 +25,7 @@ Berikut beberapa istilah yang digunakan dalam dokumen ini:
 - **Transaction**: Aktivitas pemasukan atau pengeluaran uang  
 - **Brankas**: Fitur untuk mengalokasikan dana ke dalam tujuan tertentu (misalnya tabungan atau target)  
 - **Balance**: Jumlah saldo yang dimiliki pengguna pada suatu akun  
-- **Transfer**: Pemindahan saldo dari satu akun ke akun lainnya  ## 1. Pendahuluan
-
+- **Transfer**: Pemindahan saldo dari satu akun ke akun lainnya 
 ## 2. Deskripsi Umum
 (Wawa)
 Sistem yang akan dikembangkan merupakan aplikasi manajemen keuangan pribadi berbasis mobile yang memungkinkan pengguna untuk mencatat pemasukan dan pengeluaran secara manual. Sistem ini tidak terhubung langsung dengan layanan perbankan, sehingga seluruh data keuangan diinput secara mandiri oleh pengguna.
