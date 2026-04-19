@@ -25,10 +25,10 @@ Dokumen ini akan menjadi acuan utama dalam proses pengembangan sistem.
 [SILAKAN DIISI]
 
 ### FR3 (Noya)
-[SILAKAN DIISI]
+Sistem harus menyediakan fitur pencarian atau penyaringan riwayat transaksi berdasarkan rentang tanggal tertentu (harian, mingguan, atau bulanan).
 
 ### FR4 (Noya)
-[SILAKAN DIISI]
+Sistem harus menampilkan seluruh daftar rekening beserta rincian saldo masing-masing secara lengkap.
 
 ### FR5 (Lora)
 Sistem harus mampu melakukan mutasi saldo antar rekening secara otomatis tanpa merusak statistik pengeluaran.
@@ -40,7 +40,7 @@ Sistem harus menyediakan fitur utama yang memungkinkan pengguna untuk menggunaka
 ## 4. Non-Functional Requirements
 
 ### NFR1 (Noya)
-[SILAKAN DIISI]
+Sistem harus menjamin bahwa 100% input pada kolom nominal hanya terdiri dari angka dan maksimal satu pemisah desimal, guna menghindari kesalahan kalkulasi pada sistem
 
 ### NFR2 (Lora)
 Sistem harus memiliki tingkat ketersediaan (uptime) minimal 99.5% setiap bulan, sehingga pengguna dapat mengakses catatan keuangan kapan saja tanpa kendala server down.
