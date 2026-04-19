@@ -50,7 +50,7 @@ Sistem harus menyediakan fitur pencarian atau penyaringan riwayat transaksi berd
 Sistem harus menampilkan seluruh daftar rekening beserta rincian saldo masing-masing secara lengkap.
 
 ### FR5 
-Sistem harus dapat melakukan transfer saldo antar rekening, dimana saldo pada rekening asal akan berkurang dan saldo pada rekening tujuan akan bertambah, tanpa mempengaruhi data pemasukan dan pengeluaran pada sistem.
+Sistem harus dapat melakukan transfer saldo antar rekening, dimana saldo pada rekening asal akan berkurang dan saldo pada rekening tujuan akan bertambah, tanpa mempengaruhi data pemasukan dan pengeluaran pada sistem. (Fitur opsional)
 
 ### FR6 
 Sistem harus dapat menyediakan fitur brankas (goal-based saving) yang memungkinkan pengguna untuk membuat target tabungan, mengalokasikan dana dari rekening ke brankas, serta menampilkan progres pencapaian target.
