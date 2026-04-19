@@ -5,7 +5,7 @@
 Dokumen Software Requirements Specification (SRS) ini disusun untuk mendeskripsikan kebutuhan sistem dari aplikasi Pocket-Mon, yaitu sebuah aplikasi financial tracker yang membantu pengguna dalam mengelola keuangan pribadi. Dokumen ini menjadi acuan utama bagi tim pengembang dalam merancang, membangun, dan menguji sistem agar sesuai dengan kebutuhan pengguna.
 ### 1.2 Ruang Lingkup Sistem
 Pocket-Mon merupakan aplikasi manajemen keuangan yang memungkinkan pengguna untuk mencatat pemasukan dan pengeluaran, memantau saldo dari berbagai akun, serta mengelola alokasi dana untuk tujuan tertentu (brankas). Sistem ini menyediakan fitur seperti pencatatan transaksi harian, pengelolaan multi-akun, transfer saldo antar akun, serta visualisasi data keuangan dalam bentuk ringkasan dan grafik.
-### 1.2 Definisi, Akronim, dan Istilah
+### 1.3 Definisi, Akronim, dan Istilah
 Berikut beberapa istilah yang digunakan dalam dokumen ini:
 
 User Story (US): Deskripsi kebutuhan sistem dari sudut pandang pengguna
@@ -47,8 +47,14 @@ Transfer: Pemindahan saldo dari satu akun ke akun lainnya.
 ### FR5 (Lora)
 Sistem harus mampu melakukan mutasi saldo antar rekening secara otomatis tanpa merusak statistik pengeluaran.
 
-### FR6 (Giska)
-Sistem harus menyediakan fitur utama yang memungkinkan pengguna untuk menggunakan layanan inti dari aplikasi sesuai tujuan sistem.
+### FR6 
+Sistem harus dapat menyediakan fitur brankas (goal-based saving) yang memungkinkan pengguna untuk membuat target tabungan, mengalokasikan dana dari rekening ke brankas, serta menampilkan progres pencapaian target.
+
+### FR7
+Sistem harus dapat memungkinkan pengguna untuk membuat dan mengelola kategori pengeluaran agar transaksi dapat dikelompokkan dengan jelas.
+
+### FR8
+Sistem harus dapat menampilkan visualisasi data pengeluaran dalam bentuk grafik berdasarkan kategori, sehingga pengguna dapat memahami pola pengeluaran.
 
 
 ## 4. Non-Functional Requirements
