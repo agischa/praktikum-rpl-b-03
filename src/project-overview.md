@@ -2,8 +2,9 @@ Project Overview
 
 1. Gambaran Project
 
-Aplikasi ini merupakan sebuah aplikasi e-wallet yang tidak hanya berfungsi sebagai alat transaksi digital, tetapi juga membantu pengguna dalam mengelola keuangan secara lebih terstruktur dan terarah.
-Berbeda dengan e-wallet pada umumnya, aplikasi ini berfokus pada manajemen pengeluaran dan perencanaan keuangan pribadi, sehingga pengguna dapat memahami pola keuangan mereka dengan lebih baik.
+Aplikasi ini merupakan aplikasi manajemen keuangan pribadi berbasis mobile/website yang memungkinkan pengguna untuk mencatat pemasukan dan pengeluaran secara manual, mengelola saldo dari berbagai rekening (seperti uang tunai dan bank), serta merencanakan tabungan melalui fitur brankas (goal-based saving).
+
+Berbeda dengan e-wallet pada umumnya, aplikasi ini tidak terhubung langsung dengan sistem perbankan, sehingga seluruh data keuangan diinput secara manual oleh pengguna.
 
 Aplikasi ini dirancang untuk memberikan pengalaman yang kompleks:
 - Melacak pengeluaran
@@ -13,41 +14,57 @@ Aplikasi ini dirancang untuk memberikan pengalaman yang kompleks:
 2. Tujuan Sistem
 
 Tujuan utama dari sistem ini adalah:
-- Membantu pengguna mengontrol dan memantau pengeluaran sehari-hari
-- Memberikan insight atau analisis keuangan yang mudah dipahami
-- Membantu pengguna menabung secara terarah berdasarkan tujuan (goal-based saving)
-- Mengurangi kebiasaan boros dengan memberikan visualisasi kondisi keuangan
-- Membantu pengguna mengetahui selisih antara pemasukan dan pengeluaran
+- Membantu pengguna mencatat dan mengontrol pengeluaran sehari-hari
+- Memberikan gambaran kondisi keuangan secara jelas
+- Membantu pengguna mengelola saldo dari berbagai rekening
+- Membantu pengguna menabung berdasarkan tujuan tertentu
+- Memberikan visualisasi keuangan dalam bentuk grafik
+- Membantu pengguna mengatur distribusi uang melalui fitur transfer antar rekening (opsional)
 
-3. Fitur Awal
+3. Fitur Utama Sistem
 
-3.1 Fitur Pengelompokan Pengeluaran
+3.1 Fitur Manajemen Rekening
+
 Fitur ini memungkinkan pengguna untuk:
-- Membuat kategori atau kelompok pengeluaran (contoh: makan, kos, bensin, dll)
-- Mengelompokkan setiap transaksi pengeluaran ke dalam kategori tertentu
-- Melihat ringkasan total pengeluaran berdasarkan kategori
+- User input manual beberapa rekening yang akan dikelola (Cash, BRI, BCA, dll)
+- User dapat mengatur, mengubah, dan mengedit saldo awal masing-masing rekening
 
-Selain itu, sistem akan menyediakan:
-- Visualisasi data dalam bentuk chart (diagram persentase)
-- Informasi distribusi pengeluaran
-- Perbandingan antara total pemasukan dan pengeluaran
+3.2 Fitur Pencatatan Transaksi
 
-Fitur ini membantu pengguna untuk memahami ke mana saja uang mereka digunakan.
+Fitur ini bertujuan untuk:
+a. Pengeluaran
+- User mencatat pengeluaran berdasarkan kategori
+- Saldo rekening otomatis berkurang
+b. Pemasukan
+- User mencatat pemasukan ke rekening tertentu
+- Saldo rekening otomatis bertambah
 
-3.2 Fitur Brankas (Goal-based Saving)
+3.3 Fitur Kategori Keuangan
 
-Fitur "Brankas" merupakan fitur tabungan berbasis tujuan yang memungkinkan pengguna untuk:
-- Membuat beberapa brankas sesuai kebutuhan (contoh: umroh, nikah, liburan, dll)
-- Menyisihkan uang dari saldo utama ke masing-masing brankas
-- Mengatur target tabungan untuk setiap brankas
+Fitur ini memungkinkan pengguna untuk:
+- User dapat membuat kategori pengeluaran
+- Digunakan untuk analisis dan grafik
+
+3.4 Fitur Visualisasi Data
+
+Fitur ini memungkinkan pengguna untuk memantau:
+- Grafik pengeluaran berdasarkan kategori
+- Grafik pemasukan
+- Analisis kondisi keuangan
+
+3.5 Fitur Brankas(Goal-Based Saving)
+
+Fitur ini memungkinkan pengguna untuk:
+
+- User dapat membuat target tabungan (Umroh, Rumah, dll)
+- User dapat mengalokasikan saldo ke brankas
+- Sistem menampilkan progres pencapaian target
 
 Setiap brankas akan menampilkan:
 - Progress pencapaian target (contoh: 50% tercapai)
 - Jumlah uang yang sudah terkumpul
 - Sisa yang harus dipenuhi
 
-Fitur ini membantu pengguna dalam merencanakan keuangan jangka pendek maupun jangka panjang dengan lebih terarah.
-
 4. Kesimpulan
 
-Aplikasi ini menggabungkan fungsi e-wallet dengan fitur manajemen keuangan yang lebih mendalam. Dengan adanya fitur pengelompokan pengeluaran dan brankas, pengguna tidak hanya bertransaksi, tetapi juga dapat mengelola dan merencanakan keuangan mereka secara lebih bijak.
+Aplikasi ini membantu pengguna tidak hanya mencatat keuangan, tetapi juga mengelola distribusi saldo serta merencanakan keuangan melalui sistem tabungan berbasis tujuan. Dengan adanya fitur pengelompokan pengeluaran dan brankas, pengguna tidak hanya bertransaksi, tetapi juga dapat mengelola dan merencanakan keuangan mereka secara lebih bijak.
