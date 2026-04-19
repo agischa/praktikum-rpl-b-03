@@ -27,7 +27,6 @@ Berikut beberapa istilah yang digunakan dalam dokumen ini:
 - **Balance**: Jumlah saldo yang dimiliki pengguna pada suatu akun  
 - **Transfer**: Pemindahan saldo dari satu akun ke akun lainnya 
 ## 2. Deskripsi Umum
-(Wawa)
 Sistem yang akan dikembangkan merupakan aplikasi manajemen keuangan pribadi berbasis mobile yang memungkinkan pengguna untuk mencatat pemasukan dan pengeluaran secara manual. Sistem ini tidak terhubung langsung dengan layanan perbankan, sehingga seluruh data keuangan diinput secara mandiri oleh pengguna.
 
 Aplikasi ini mendukung pengelolaan keuangan melalui beberapa fitur utama, yaitu manajemen multi rekening (seperti uang tunai dan rekening bank), pencatatan transaksi pemasukan dan pengeluaran, serta fitur transfer antar rekening untuk mengatur distribusi saldo.
@@ -38,19 +37,19 @@ Sistem juga menyediakan visualisasi data dalam bentuk grafik untuk membantu peng
 
 ## 3. Functional Requirements
 
-### FR1 (Wawa)
+### FR1 
 Sistem harus dapat mencatat pengeluaran dari rekening yang dipilih oleh pengguna, dimana pengguna dapat memasukkan nominal, kategori pengeluaran, serta tanggal transaksi, dan sistem akan secara otomatis mengurangi saldo pada rekening tersebut.
 
-### FR2 (Wawa)
+### FR2 
 Sistem harus dapat mencatat pemasukan ke rekening yang dipilih oleh pengguna, dimana pengguna dapat memasukkan nominal dan sumber pemasukan, dan sistem akan secara otomatis menambahkan saldo pada rekening tersebut.
 
-### FR3 (Noya)
+### FR3 
 Sistem harus menyediakan fitur pencarian atau penyaringan riwayat transaksi berdasarkan rentang tanggal tertentu (harian, mingguan, atau bulanan).
 
-### FR4 (Noya)
+### FR4 
 Sistem harus menampilkan seluruh daftar rekening beserta rincian saldo masing-masing secara lengkap.
 
-### FR5 (Lora)
+### FR5 
 Sistem harus mampu melakukan mutasi saldo antar rekening secara otomatis tanpa merusak statistik pengeluaran.
 
 ### FR6 
@@ -65,19 +64,19 @@ Sistem harus dapat menampilkan visualisasi data pengeluaran dalam bentuk grafik 
 
 ## 4. Non-Functional Requirements
 
-### NFR1 (Noya)
+### NFR1 
 Sistem harus menjamin bahwa 100% input pada kolom nominal hanya terdiri dari angka dan maksimal satu pemisah desimal, guna menghindari kesalahan kalkulasi pada sistem
 
-### NFR2 (Lora)
+### NFR2 
 Sistem harus memiliki tingkat ketersediaan (uptime) minimal 99.5% setiap bulan, sehingga pengguna dapat mengakses catatan keuangan kapan saja tanpa kendala server down.
 
-### NFR3 (Lora)
+### NFR3 
 Sistem harus menjamin tingkat akurasi perhitungan saldo sebesar 100% (zero error) untuk setiap transaksi pemasukan, pengeluaran, maupun transfer antar rekening.
 
-### NFR4 (Wawa)
+### NFR4 
 Sistem harus memiliki waktu respon maksimal 3 detik untuk setiap permintaan pengguna dalam kondisi normal.
 
-## NFR5 (Wawa)
+## NFR5 
 Sistem harus memastikan data pengguna hanya dapat diakses oleh pengguna yang bersangkutan melalui mekanisme autentikasi (login) yang aman.
 
 
