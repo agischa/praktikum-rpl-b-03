@@ -12,4 +12,6 @@
 | US-08 | View saving progress toward target | Could |
 | US-09 | Record daily expenses from a selected account | Must |
 | US-10 | Manage multiple accounts to separate money sources | Must |
-| US-11 | Transfer balance between accounts | Could |
+| US-11 | Continue as guest without creating an account | Should |
+| US-12 | Transfer balance between accounts | Could |
+| US-13 | Register and login with email to sync data to cloud | Must |
