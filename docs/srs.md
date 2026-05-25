@@ -15,7 +15,13 @@ Dokumen *Software Requirements Specification (SRS)* ini disusun untuk mendeskrip
 
 Aplikasi ini dirancang untuk membantu pengguna dalam mengontrol arus kas secara terstruktur, memantau perkembangan keuangan, serta mencapai tujuan finansial dengan lebih efektif.
 
-### 1.3 Definisi, Akronim, dan Istilah
+### 1.3 Stake Holder
+| Stakeholder | Peran | Kepentingan |
+| ------------- | ------------- | ------------- |
+| User | Primary User | Dapat mencatat transaksi, memantau saldo, dan mencapai target tabungan dengan mudah |
+| Developer | Developer & Maintainer | Membangun sistem yang stabil dan aman |
+
+### 1.4 Definisi, Akronim, dan Istilah
 Berikut beberapa istilah yang digunakan dalam dokumen ini:
 
 - **User Story (US)**: Deskripsi kebutuhan sistem dari sudut pandang pengguna  
@@ -61,6 +67,14 @@ Sistem harus dapat memungkinkan pengguna untuk membuat dan mengelola kategori pe
 ### FR8
 Sistem harus dapat menampilkan visualisasi data pengeluaran dalam bentuk grafik berdasarkan kategori, sehingga pengguna dapat memahami pola pengeluaran.
 
+### FR9
+Sistem harus memungkinkan pengguna mengelola beberapa rekening (cash, bank, e-wallet) untuk memisahkan sumber dana.
+
+### FR10
+Sistem harus menyediakan opsi "Masuk tanpa akun" yang mengarahkan pengguna langsung ke Set Up First Wallet; seluruh data tersimpan secara lokal di perangkat.
+
+### FR11
+Sistem harus menyediakan fitur registrasi dan login (email + password) agar data dapat disinkronisasi ke cloud dan dapat diakses kembali setelah reinstall/ganti perangkat.
 
 ## 4. Non-Functional Requirements
 
@@ -77,7 +91,7 @@ Sistem harus menjamin tingkat akurasi perhitungan saldo sebesar 100% (zero error
 Sistem harus memiliki waktu respon maksimal 3 detik untuk setiap permintaan pengguna dalam kondisi normal.
 
 ## NFR5 
-Sistem harus memastikan data pengguna hanya dapat diakses oleh pengguna yang bersangkutan melalui mekanisme autentikasi (login) yang aman.
+Data pengguna mode akun hanya dapat diakses melalui autentikasi JWT yang valid; pengguna mode guest menerima notifikasi peringatan bahwa data akan hilang jika aplikasi diuninstall
 
 
 ## 5. Catatan
