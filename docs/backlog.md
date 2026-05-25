@@ -12,4 +12,4 @@
 | US-08 | View saving progress toward target | Could |
 | US-09 | Record daily expenses from a selected account | Must |
 | US-10 | Manage multiple accounts to separate money sources | Must |
-| US-11 | Transfer balance between accounts | Must |
+| US-11 | Transfer balance between accounts | Could |
