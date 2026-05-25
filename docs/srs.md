@@ -91,7 +91,7 @@ Sistem harus menjamin tingkat akurasi perhitungan saldo sebesar 100% (zero error
 Sistem harus memiliki waktu respon maksimal 3 detik untuk setiap permintaan pengguna dalam kondisi normal.
 
 ## NFR5 
-Data pengguna mode akun hanya dapat diakses melalui autentikasi JWT yang valid; pengguna mode guest menerima notifikasi peringatan bahwa data akan hilang jika aplikasi diuninstall
+Sistem harus memastikan data pengguna mode akun hanya dapat diakses oleh pengguna yang bersangkutan melalui mekanisme autentikasi (login) yang aman. Pengguna mode guest menerima notifikasi peringatan bahwa data akan hilang jika aplikasi diuninstall
 
 
 ## 5. Catatan
