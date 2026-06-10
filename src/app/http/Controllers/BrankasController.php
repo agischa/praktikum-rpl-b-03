@@ -20,29 +20,31 @@ class BrankasController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'item_name'       => 'required|string',
-            'target_price'    => 'required|numeric|min:1',
-            'collected_amount'=> 'nullable|numeric|min:0',
-            'deadline'        => 'nullable|date',
-            'priority'        => 'required|in:tinggi,sedang,rendah',
-            'description'     => 'nullable|string',
+            'item_name' => 'required|string',
+            'target_price' => 'required|numeric|min:1',
+            'collected_amount' => 'nullable|numeric|min:0',
+            'deadline' => 'nullable|date',
+            'priority' => 'required|in:tinggi,sedang,rendah',
+            'description' => 'nullable|string',
         ]);
 
         $collected = $request->collected_amount ?? 0;
-        $status = $collected >= $request->target_price ? 'tercapai' : 'belum_tercapai';
+        $status = $this->determineStatus($collected, $request->target_price);
 
         Brankas::create([
-            'user_id'          => Auth::id(),
-            'item_name'        => $request->item_name,
-            'target_price'     => $request->target_price,
+            'user_id' => Auth::id(),
+            'item_name' => $request->item_name,
+            'target_price' => $request->target_price,
             'collected_amount' => $collected,
-            'deadline'         => $request->deadline,
-            'priority'         => $request->priority,
-            'description'      => $request->description,
-            'status'           => $status,
+            'deadline' => $request->deadline,
+            'priority' => $request->priority,
+            'description' => $request->description,
+            'status' => $status,
         ]);
 
-        return redirect()->route('brankas.index')->with('success', 'Brankas berhasil ditambahkan!');
+        return redirect()
+            ->route('brankas.index')
+            ->with('success', 'Brankas berhasil ditambahkan!');
     }
 
     public function update(Request $request, Brankas $branka)
@@ -50,34 +52,47 @@ class BrankasController extends Controller
         abort_if($branka->user_id !== Auth::id(), 403);
 
         $request->validate([
-            'item_name'        => 'required|string',
-            'target_price'     => 'required|numeric|min:1',
+            'item_name' => 'required|string',
+            'target_price' => 'required|numeric|min:1',
             'collected_amount' => 'nullable|numeric|min:0',
-            'deadline'         => 'nullable|date',
-            'priority'         => 'required|in:tinggi,sedang,rendah',
-            'description'      => 'nullable|string',
+            'deadline' => 'nullable|date',
+            'priority' => 'required|in:tinggi,sedang,rendah',
+            'description' => 'nullable|string',
         ]);
 
         $collected = $request->collected_amount ?? 0;
-        $status = $collected >= $request->target_price ? 'tercapai' : 'belum_tercapai';
+        $status = $this->determineStatus($collected, $request->target_price);
 
         $branka->update([
-            'item_name'        => $request->item_name,
-            'target_price'     => $request->target_price,
+            'item_name' => $request->item_name,
+            'target_price' => $request->target_price,
             'collected_amount' => $collected,
-            'deadline'         => $request->deadline,
-            'priority'         => $request->priority,
-            'description'      => $request->description,
-            'status'           => $status,
+            'deadline' => $request->deadline,
+            'priority' => $request->priority,
+            'description' => $request->description,
+            'status' => $status,
         ]);
 
-        return redirect()->route('brankas.index')->with('success', 'Brankas berhasil diupdate!');
+        return redirect()
+            ->route('brankas.index')
+            ->with('success', 'Brankas berhasil diupdate!');
     }
 
     public function destroy(Brankas $branka)
     {
         abort_if($branka->user_id !== Auth::id(), 403);
+
         $branka->delete();
-        return redirect()->route('brankas.index')->with('success', 'Brankas berhasil dihapus!');
+
+        return redirect()
+            ->route('brankas.index')
+            ->with('success', 'Brankas berhasil dihapus!');
+    }
+
+    private function determineStatus($collected, $targetPrice)
+    {
+        return $collected >= $targetPrice
+            ? 'tercapai'
+            : 'belum_tercapai';
     }
 }
