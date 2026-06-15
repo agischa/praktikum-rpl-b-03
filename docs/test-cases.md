@@ -24,14 +24,6 @@
 | Giska | TC011–TC014 (Wallet & Transfer) | TC015–TC021 (Dashboard, Filter, Brankas, Laporan) |
 | Lora | TC015–TC021 (Dashboard, Filter, Brankas, Laporan) | TC001–TC005 (Autentikasi & Tamu) |
 
-## Petunjuk Eksekusi
-1. Jalankan tiap test case **berurutan**, ikuti Steps persis.
-2. Isi kolom **Actual Result** apa adanya (bukan yang diharapkan).
-3. Tandai **Status**: `Pass` jika Actual = Expected, `Fail` jika berbeda.
-4. Setiap baris **Fail** → buat GitHub Issue berlabel `bug` (lihat format di bawah) + screenshot.
-
----
-
 ## Daftar Test Case
 
 | TC-ID | Judul | Precondition | Steps | Expected Result | Actual Result | Status |
