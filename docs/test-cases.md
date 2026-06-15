@@ -52,7 +52,7 @@
 
 ---
 
-## Ringkasan Eksekusi (isi setelah selesai)
+## Ringkasan Eksekusi 
 
 - Total test case: **21**
 - Pass: **17**
@@ -60,7 +60,7 @@
 - Bug ditemukan: **3**
 - Blocked: **1**
 
-## Daftar Bug (isi link GitHub Issue)
+## Daftar Bug 
 
 | TC Gagal | Bug Issue | Severity |
 |----------|-----------|----------|
